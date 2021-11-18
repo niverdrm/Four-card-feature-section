@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Very-Light-Gray);
+}
+.container {
+  margin: 80px 22px;
+}
+
+.header {
+  text-align: center;
+  font-weight: 200;
+}
+.header h2,
+.header h2 span {
+  font-size: 24px;
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+}
+.header h2 span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  display: block;
+}
+
+.header p {
+  color: var(--Very-Dark-Blue);
+  font-weight: 200;
+  margin: 12px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+.cards .card_lados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card_centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_lados .item {
+  width: 300px;
+  padding: 32px;
+  margin: 8px 0px;
+  border-radius: 5px;
+}
+.border_red {
+  border-top: 3px solid var(--Red) !important;
+}
+.border_blue {
+  border-top: 3px solid var(--Blue) !important;
+}
+.border_orange {
+  border-top: 3px solid var(--Orange) !important;
+}
+.border_cyan {
+  border-top: 3px solid var(--Cyan) !important;
+}
+
+.item {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  position: relative;
+}
+.card_centro .item {
+  padding: 32px;
+  width: 300px;
+  margin: 8px 0px;
+}
+.item p {
+  color: var(--Grayish-Blue);
+  font-size: 12px;
+  margin: 10px 0px 80px 0px;
+  line-height: 22px;
+}
+.item_img {
+  position: absolute;
+  bottom: 22px;
+  right: 32px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+@media (min-width: 1152px) {
+  .container {
+    margin: 15px 80px;
+  }
+
+  .header {
+    text-align: center;
+    margin: 20px 350px;
+    font-weight: 200;
+  }
+  .header h2,
+  .header h2 span {
+    font-size: 30px;
+  }
+  .header p {
+    font-size: 13px;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .card_centro .item {
+    margin: 8px 0px;
+  }
+  .card_lados .item {
+    margin: 16px;
+  }
+}
